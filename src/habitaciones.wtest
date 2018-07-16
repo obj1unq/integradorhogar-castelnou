@@ -146,7 +146,8 @@ describe "group of tests" {
 	 
 
 	test "andrea y milena entrando y saliendo de cuartos" {
-			
+		
+		//TODO: Mezcla ordenes con preguntas	
 		// HACER que milena entre a banioPrincipal
 		assert.equals(banioPrincipal, milena.CambioHabitacion(banioConMenor,banioPrincipal)/*habitacion donde esta milena */)
 
@@ -160,9 +161,9 @@ describe "group of tests" {
 		
 		
 		// HACER que andrea entre a banioPrincipal		
-		
 		assert.equals(banioPrincipal, andrea.CambioHabitacion(dormitorioMatrimonial,banioPrincipal) /* habitacion donde esta andrea */)
 		
+		//TODO: en lugar de pedir la coleccion y hacer contains, corresponde mandar un mensaje a la habitacion
  		assert.notThat(dormitorioMatrimonial.ocupantes().contains(andrea)/* si en dormitorioMatrimonial está andrea*/)		
 		
 	} 
